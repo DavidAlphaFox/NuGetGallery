@@ -173,6 +173,7 @@
     </Compile>
     <Compile Include="Areas\Admin\Models\DeletedStatus.cs" />
     <Compile Include="Areas\Admin\Migrations\SupportRequestMigrationsConfiguration.cs" />
+    <Compile Include="Areas\Admin\Models\RevokeApiKeysRequest.cs" />
     <Compile Include="Areas\Admin\Services\RevalidationAdminService.cs" />
     <Compile Include="Areas\Admin\Services\ValidationAdminService.cs" />
     <Compile Include="Areas\Admin\ViewModels\DeleteAccountAsAdminViewModel.cs" />
@@ -266,6 +267,10 @@
     <Compile Include="Migrations\201910291956170_AddPackageVulnerabilities.cs" />
     <Compile Include="Migrations\201910291956170_AddPackageVulnerabilities.Designer.cs">
       <DependentUpon>201910291956170_AddPackageVulnerabilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911050112509_AddCredentialRevokedBy.cs" />
+    <Compile Include="Migrations\201911050112509_AddCredentialRevokedBy.Designer.cs">
+      <DependentUpon>201911050112509_AddCredentialRevokedBy.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\ConfigurationIconFileProvider.cs" />
     <Compile Include="Services\IconUrlDeprecationValidationMessage.cs" />
@@ -1628,6 +1633,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910291956170_AddPackageVulnerabilities.resx">
       <DependentUpon>201910291956170_AddPackageVulnerabilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911050112509_AddCredentialRevokedBy.resx">
+      <DependentUpon>201911050112509_AddCredentialRevokedBy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OData\QueryAllowed\Data\apiv1packages.json" />
     <EmbeddedResource Include="OData\QueryAllowed\Data\apiv1search.json" />
